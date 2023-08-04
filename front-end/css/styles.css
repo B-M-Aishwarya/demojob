@@ -1,0 +1,545 @@
+/*** Custom css ***/
+
+/*** Header css ***/
+header {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.head-page {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #333;
+  padding: 0px 5px;
+}
+
+.head-page img {
+  width: 30px;
+  height: 30px;
+}
+
+.header-content {
+  display: flex;
+  margin: 0 10px; 
+}
+
+.head-page h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links p {
+  margin: 0 10px;
+  border-radius: 3px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links p:hover {
+  background-color: rgb(232, 227, 227);
+  padding: 3px 3px;
+  color: #333;
+  font-size: 20px;
+  margin: auto;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-bottom: auto;
+  margin: 0 auto;
+}
+
+.bg-image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  display: -webkit-flex;
+}
+
+.bg-image img {
+  width: 100%;
+  height: 99vh;
+  min-height: 475px;
+  object-position: right;
+  text-align: center;
+  object-fit: cover;
+}
+
+.bg-image::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;  
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  .bg-image img {
+    object-position: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .bg-image img {
+    object-position: center;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .bg-image img {
+    object-position: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bg-image img {
+    object-position: center;
+  }
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.text-overlay h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.text-overlay p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.bg-btn {
+  display: inline-block;
+}
+
+.bg-btn button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.bg-btn button:hover {
+  background-color: #0056b3;
+}
+
+/*** Body and Main Styles ***/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+    max-width: 1200px;
+  }
+
+.row {
+  margin-bottom: 60px
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px
+}
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  /*** home-page Section Styles ***/
+  #home-page {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    margin: 0 10px;
+  }
+  
+  #home-page h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #home-page p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+@media (max-width: 767px) {
+  #home-page h1 {
+   font-size: 28px;
+  }
+  
+  #home-page p {
+   font-size: 16px;
+  }
+  
+  #how-it-works ol {
+   font-size: 16px;
+  }
+}
+  
+  /*** Features Section Styles ***/
+ 
+.features {
+  padding: 50px 0;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: auto;
+}
+
+.features h1 {
+  margin-bottom: 40px;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: #333;
+}
+
+.feature-heading {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.feature-description {
+  margin-top: 10px;
+  color: #777;
+}
+  
+  /*** Section Styles ***/
+  #works {
+    background-color: #f0f0f0;
+    padding: 40px 0;
+  }
+  
+  #works h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  #works ol {
+    list-style-type: decimal;
+    font-size: 18px;
+    padding-left: 30px;
+  }
+
+  /*** Top Companies Hiring Section ***/
+
+  .top-companies {
+  padding: 10px 0;
+  background-color: #f9f9f9;
+  
+}
+
+.section-heading {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.company-card {
+  background-color: #fff;
+  padding: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.company-card img {
+  max-width: 100px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.company-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.company-card p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.company-card a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.company-card a:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 767px) {
+  .company-card {
+    margin-bottom: 20px;
+  }
+}
+ 
+  /*** Testimonial ***/ 
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.testimonial {
+  background: rgba(0, 0, 0, .04);
+}
+
+.testimonial-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.testimonial-card {
+  width: 300px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  margin-top: 15px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-color: #ddd;
+  overflow: hidden;
+}
+
+.testimonial-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.candidate-name {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.review-text {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial-card {
+    width: 90%;
+  }
+}
+
+  /*** Footer Styles ***/
+
+.footer {
+  position: relative;
+  margin-top: 45px;
+  background: #333;
+  color: #fff;
+  padding-top: 25px;
+}
+
+.footer .footer-col,
+.footer .footer-link,
+.footer .footer-newsletter {
+  position: relative;
+  margin-bottom: 45px;
+  color: #fff;
+}
+
+.footer .footer-col h3,
+.footer .footer-link h3,
+.footer .footer-newsletter h3 {
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.footer-col img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer .footer-col h3::after,
+.footer .footer-link h3::after,
+.footer .footer-newsletter h3::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.footer .footer-link a {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #fff;
+  transition: .3s;
+}
+
+.footer .footer-link a::before {
+  position: relative;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+.footer .footer-link a:hover {
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.footer a {
+  font-size: 13px;
+  color: #8493a2;
+  text-decoration: none
+}
+
+.footer a:hover,.footer a:focus {
+  text-decoration: none;
+  color: #fff
+}
+
+.footer .footer-social {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.footer .footer-social a {
+  display: inline-flex;
+  margin-right: 5px;
+  width: 35px;
+  height: 35px;
+  font-size: 16px;
+  border-radius: 35px;
+  background: darkgray;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.footer .footer-social a:hover {
+ background: #007bff;
+}
+
+.footer .footer-newsletter .form {
+  position: relative;
+  width: 100%;
+}
+
+.footer .footer-newsletter input {
+  height: 60px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.footer .footer-newsletter .btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  height: 44px;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.footer .copyright {
+  position: relative;
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footer .copyright p {
+  margin: 0;
+  display: inline-block;
+}
+
+.footer .copyright p a {
+  color: #007bff;
+}
+
+.footer .copyright p a:hover {
+  color: #fff;
+}
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+
+  @media (max-width: 767px) {
+    .footer {
+      text-align: center;
+    }
+  }
